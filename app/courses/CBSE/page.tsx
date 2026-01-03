@@ -1,23 +1,22 @@
 import Link from "next/link";
+import PageHeader from "@/app/components/PageHeader";
+import Card from "@/app/components/Card";
 
 export default function CBSEPage() {
   return (
-    <main className="min-h-screen px-6 py-16 text-center">
-      <h1 className="text-3xl font-bold mb-10">CBSE</h1>
+    <main className="min-h-screen px-6 py-12">
+      <PageHeader
+        title="CBSE Curriculum"
+        subtitle="Choose your grade"
+      />
 
-      <div className="flex justify-center gap-6">
-        <Link
-          href="/courses/CBSE/grade-10"
-          className="px-6 py-3 bg-blue-600 text-white rounded"
-        >
-          Grade 10
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <Link href="/courses/CBSE/grade-10">
+          <Card title="Grade 10" />
         </Link>
 
-        <Link
-          href="/courses/CBSE/grade-12"
-          className="px-6 py-3 bg-green-600 text-white rounded"
-        >
-          Grade 12
+        <Link href="/courses/CBSE/grade-12">
+          <Card title="Grade 12" />
         </Link>
       </div>
     </main>
