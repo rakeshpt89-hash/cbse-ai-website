@@ -52,8 +52,23 @@ export default function RootLayout({
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
+  
+      {/* Navbar */}
+      <header className="w-full px-6 py-4 flex justify-between items-center border-b">
+      <h1 className="font-bold text-lg">Creation Educenter</h1>
+
+    <nav className="flex gap-6">
+      <a href="/" className="text-blue-600 hover:underline">Home</a>
+      <a href="/courses" className="text-blue-600 hover:underline">Courses</a>
+      <a href="/contact" className="text-blue-600 hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  {/* Page content */}
+  {children}
+
+</body>
+
     </html>
   );
 }

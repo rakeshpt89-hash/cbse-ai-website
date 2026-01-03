@@ -16,24 +16,26 @@ export default function CoursesPage() {
         {/* Grade 10 */}
         <div className="bg-white p-6 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-3">
-            Grade 10 – CBSE
+            Grade 10
           </h2>
           <ul className="text-gray-700 space-y-2">
             <li>✔ Mathematics</li>
-            <li>✔ Science (Physics, Chemistry, Biology)</li>
-            <li>✔ Concept clarity & exam preparation</li>
+            <li>✔ Science</li>
+            <li>✔ Exam Preparation</li>
           </ul>
         </div>
 
         {/* Grade 12 */}
         <div className="bg-white p-6 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-3">
-            Grade 12 – CBSE
+            Grade 12
           </h2>
           <ul className="text-gray-700 space-y-2">
             <li>✔ Mathematics</li>
-            <li>✔ Physics & Chemistry</li>
-            <li>✔ Board exam & competitive focus</li>
+            <li>✔ Chemistry</li>
+            <li>✔ Physics</li>
+            <li>✔ Biology</li>
+            <li>✔ Exam Preparation</li>
           </ul>
         </div>
 
