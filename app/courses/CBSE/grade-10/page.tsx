@@ -1,6 +1,5 @@
-import Link from "next/link";
-import PageHeader from "@/app/components/PageHeader";
-import Card from "@/app/components/Card";
+import PageHeader from "@/components/PageHeader";
+import Card from "@/components/Card";
 
 export default function Grade10Page() {
   return (
@@ -11,13 +10,14 @@ export default function Grade10Page() {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        <Link href="/courses/CBSE/grade-10/mathematics">
-          <Card title="Mathematics" />
-        </Link>
-
-        <Link href="/courses/CBSE/grade-10/science">
-          <Card title="Science" />
-        </Link>
+        <Card
+          title="Mathematics"
+          href="/courses/CBSE/grade-10/mathematics"
+        />
+        <Card
+          title="Science"
+          href="/courses/CBSE/grade-10/science"
+        />
       </div>
     </main>
   );

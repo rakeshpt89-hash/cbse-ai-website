@@ -8,8 +8,8 @@ interface CardProps {
 export default function Card({ title, href }: CardProps) {
   return (
     <Link href={href}>
-      <div className="cursor-pointer rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm transition hover:shadow-md hover:scale-105">
-        <h2 className="text-xl font-semibold text-gray-800">
+      <div className="cursor-pointer rounded-xl border border-gray-200 bg-white p-6 text-center shadow-sm transition hover:shadow-md hover:scale-105">
+        <h2 className="text-lg font-semibold text-gray-800">
           {title}
         </h2>
       </div>
