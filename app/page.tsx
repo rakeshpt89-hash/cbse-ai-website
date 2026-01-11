@@ -1,20 +1,18 @@
-import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
+import Card from "@/components/Card";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-      <h1 className="text-4xl font-bold mb-6">Creation Educenter</h1>
+    <main className="min-h-screen px-6 py-12">
+      <PageHeader
+        title="Creation Educenter"
+        subtitle="Select an option to continue"
+      />
 
-      <p className="text-gray-600 mb-8">
-        Select your education board
-      </p>
-
-      <Link
-        href="/courses/CBSE"
-        className="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg"
-      >
-        CBSE
-      </Link>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <Card title="Courses" href="/courses" />
+        <Card title="Contact" href="/contact" />
+      </div>
     </main>
   );
 }

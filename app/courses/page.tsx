@@ -1,18 +1,17 @@
-import Link from "next/link";
-import PageHeader from "./components/PageHeader";
-import PrimaryButton from "./components/PrimaryButton";
+import PageHeader from "@/components/PageHeader";
+import Card from "@/components/Card";
 
-export default function HomePage() {
+export default function CoursesPage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center">
+    <main className="min-h-screen px-6 py-12">
       <PageHeader
-        title="Creation Educenter"
+        title="Courses"
         subtitle="Select your education board"
       />
 
-      <Link href="/courses/CBSE">
-        <PrimaryButton label="CBSE" />
-      </Link>
+      <div className="max-w-xl mx-auto">
+        <Card title="CBSE" href="/courses/CBSE" />
+      </div>
     </main>
   );
 }
