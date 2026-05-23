@@ -55,7 +55,7 @@ export default function RootLayout({
   
       {/* Navbar */}
       <header className="w-full px-6 py-4 flex justify-between items-center border-b">
-      <h1 className="font-bold text-lg">Creation Educenter</h1>
+      <h1 className="font-bold text-lg">ASMA Edu Center</h1>
 
     <nav className="flex gap-6">
       <a href="/" className="text-blue-600 hover:underline">Home</a>

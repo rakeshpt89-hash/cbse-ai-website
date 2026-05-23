@@ -16,7 +16,7 @@ export default function ContactPage() {
       <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow space-y-4">
 
         <h2 className="text-xl font-semibold text-center">
-          Creation Educenter
+          ASMA Edu Center
         </h2>
 
         <p className="text-center text-gray-600">

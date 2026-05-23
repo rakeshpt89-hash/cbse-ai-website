@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen px-6 py-12">
       <PageHeader
-        title="Creation Educenter"
+        title="ASMA Edu Center"
         subtitle="Select an option to continue"
       />
 
